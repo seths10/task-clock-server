@@ -4,8 +4,8 @@ all: build
 
 build:
 	@echo "Building..."
-	@go build -o ${BINARY} cmd/api/main.go
+	@go build -o ${BINARY} ./cmd/api
 
 run:
 	@echo "Running..."
-	@go run cmd/server/main.go
+	@go run cmd/api/main.go
